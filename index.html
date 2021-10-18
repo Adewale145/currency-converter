@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Currency Converter App</title>
+</head>
+<body>
+    <div class="main-app">
+        <header>
+            <h3>currency converter</h3>
+        </header>
+        <form action="#">
+            <div class="amount">
+                <p>enter amount:</p>
+                <input type="number" id="input-amount" placeholder="your amount....">
+            </div>
+            <div class="exchange-section">
+                <div class="from">
+                    <p>from</p>
+                    <div class="select-box">
+                        <img src="https://www.countryflags.io/us/flat/64.png" alt="flag">
+                        <select class="currency-code"></select>
+                    </div>
+                </div>
+                <i id="icon" class="fas fa-exchange-alt"></i>
+                <div class="to">
+                    <p>to</p>
+                    <div class="select-box">
+                        <img src="https://www.countryflags.io/ng/flat/64.png" alt="flag">
+                        <select class="currency-code"></select>   
+                    </div>
+                </div>
+            </div>
+            <div class="exchange-rate">
+                <p>Getting Rate.....</p>
+            </div>
+            <button id="btn">convert currency</button>
+        </form>
+    </div>
+    <script src="js/countryCurrencyList.js"></script>
+    <script src="js/script.js"></script>
+    </body>
+</html>
